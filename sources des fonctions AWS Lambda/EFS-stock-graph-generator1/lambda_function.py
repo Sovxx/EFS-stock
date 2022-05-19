@@ -29,11 +29,11 @@ def lambda_handler(event, context):
     data = json.loads(html)
 
     #cleanup (simpliste)
-    offset = 0
-    for i in range(len(data["import"])):
-        if data["import"][i-offset]["statusCode site EFS"] != 200:
-            data["import"].remove(data["import"][i-offset])
-            offset = offset + 1
+    #offset = 0
+    #for i in range(len(data["import"])):
+    #    if data["import"][i-offset]["statusCode site EFS"] != 200:
+    #        data["import"].remove(data["import"][i-offset])
+    #        offset = offset + 1
 
     X_legende = []
     Y = {}   #dictionnaire contenant, pour chaque "key" de groupe sanguin, la "value" de liste historique des stocks
